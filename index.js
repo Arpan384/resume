@@ -214,7 +214,7 @@ const training_details = {
     },
     "inception": {
         desc: "This course helped me kickstart my career in Computer Science Field where i had no prior experience. I learned how awesome it is to make the computer solve our problems. Creation and Usage of Data Strutures and Algorithms was also taught.\n It really imbibed in me the problem solving skills!!",
-        img: "./certificates/ninjas_completion.jpg",
+        img: "./certificates/ninjas_completion.JPG",
         date:"June 4, 2018  -  Sept. 10, 2018",
         inst:"Nidhi Agarwal",
         by:"Coding Ninjas Pvt. Ltd."

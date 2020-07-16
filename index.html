@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arpan Saini</title>
+
+    <link rel="shortcut icon" href="./img/favicon1.png" type="image/x-icon">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .material-placeholder {
+            z-index: 100;
+        }
+
+        header {
+            overflow-y: hidden;
+            max-height: 500px;
+        }
+
+        #skills {
+            min-height: 500px;
+            padding: 0px 0px 30px 0px;
+            overflow: hidden;
+        }
+        #skills>* {
+            opacity: 1;
+        }
+
+        .section {
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+        }
+
+        .tabs .indicator {
+            background-color: #1a237e;
+        }
+
+        .tabs .tab a:focus,
+        .tabs .tab a:focus.active {
+            background: transparent;
+            font-weight: bold;
+        }
+
+        @media screen and (max-width: 670px) {
+            header {
+                min-height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <header style="position: relative;">
+        <nav class="nav-wrapper black z-depth-3">
+            <!-- grey darken-4 -->
+            <div class="container">
+                <a href="#" class="brand-logo">
+                    Arpan Saini
+                </a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#trainings">Trainings</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#more">More</a></li>
+                    <li><a href="https://www.linkedin.com/in/arpan-saini-35b6b0194/" target="_blank"
+                            class="btn-floating btn-small indigo darken-4 tooltipped" data-tooltip="LinkedIn"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </li>
+                    <li><a href="https://github.com/Arpan384" target="_blank"
+                            class="btn-floating btn-small indigo darken-4 tooltipped" data-tooltip="GitHub"><i
+                                class="fab fa-github"></i></a>
+                    </li>
+                    <li><a href="https://www.facebook.com/saini2.arpan/" target="_blank"
+                            class="btn-floating btn-small indigo darken-4 tooltipped" data-tooltip="Facebook"><i
+                                class="fab fa-facebook"></i></a>
+                    </li>
+                </ul>
+
+
+                <ul class="sidenav grey lighten-3" id="mobile-menu">
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#trainings">Trainings</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#more">More</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="parallax-container">
+            <div class="parallax">
+                <img src="./img/bg10.jpg" alt="" class="responsive-img">
+            </div>
+        </div>
+        <div id="cube-section" style="position: absolute; height: 100%; width: 100%;">
+            <div class="gap" style="position: absolute; height: 100%; width: 100%;"></div>
+        </div>
+    </header>
+
+    <!-- about -->
+    <section id="about" class="scrollspy section container" style="border-bottom: 0px solid; padding-bottom: 0px;">
+        <div class="container" style="position: absolute; top:-280px;  width: 100%;">
+            <div class="salutation center" style="z-index: 100;">
+                <h3 class="white-text">
+                    Hi, I'm Arpan Saini <div style="display: inline-block;">!</div>
+                </h3>
+
+            </div>
+        </div>
+        <div id="profile-pic" class="container" style="z-index: 100;">
+            <img src="./img/dp.jpg" class="responsive-img materialboxed" alt="This is who I am :)" style="width: 101%;">
+        </div>
+
+        <div id="about-content" style="position:relative; top: -125px; z-index: 10;">
+            <h3 class="center">About Me</h3>
+            <div class="row z-depth-5" style="background-color: inherit; overflow-x: hidden;">
+                <div class="col l7 m10 s12 offset-m1" style="padding: 30px 0px 30px 20px;">
+                    <h5 style="font-weight: bolder;">Who Am I ?</h5>
+                    <div class="underline_1" style="height: 2px; background-color: red; margin-bottom: 30px; "></div>
+                    <h6 style="line-height: 18px; word-spacing: 5px; letter-spacing: 1px; font-size: 15px;">
+                        A fast learner and logical thinker, currently pursuing B Tech. from Bhagwan Parshuram Institute
+                        of Technology. Handy with CPP, Java and DS. Full Stack Developer with knowledge of
+                        JavaScript, NodeJS, ExpressJS and AngularJS. Knows basics of HTML, CSS, ReactJS, MySQL, MS
+                        Office and have worked a bit with Machine Learning.
+                        <br>
+                        Good at combining knowledge of multiple
+                        fields to create new stuff.
+                        <br> Always interested in exploring new technologies and beating
+                        challenges.
+                    </h6>
+                    <h5>Career Objective</h5>
+                    <p>
+                        To persue a challenging career with dedication and provide my efficiency to the fullest along
+                        with learning new technologies.
+                    </p>
+                </div>
+
+
+                <div class="col l5 m10 s12 offset-l offset-m1 " style="padding: 40px 20px 30px 0px;">
+                    <ul class="tabs">
+                        <li class="tab col s6 center">
+                            <a href="#basic" class="indigo-text" style="font-weight: bolder; font-size: 16px;">
+                                Basic Info
+                            </a>
+                        </li>
+                        <li class="tab col s6 center">
+                            <a href="#interest" class="indigo-text" style="font-weight: bolder; font-size: 16px;">
+                                Interests
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="col s12" id="basic">
+                        <table class="highlight resposive-table ">
+                            <tr>
+                                <td class="headCol">Age:</td>
+                                <td>21</td>
+                            </tr>
+                            <tr>
+                                <td class="headCol" rowspan="2">Email:</td>
+                                <td class="truncate" rowspan="2">saini2.arpan@gmail.com</td>
+                            </tr>
+                            <tr>
+
+                            </tr>
+                            <tr>
+                                <td class="headCol" rowspan="2">Phone:</td>
+                                <td rowspan="2">+91-986-875-8230</td>
+                            </tr>
+                            <tr>
+
+                            </tr>
+                            <tr>
+                                <td class="headCol" rowspan="2">Address:</td>
+                                <td rowspan="2">Sector - 13, Rohini, New Delhi - 110085, India</td>
+                            </tr>
+                            <tr>
+                            </tr>
+                            <tr>
+                                <td class="headCol">Languages:</td>
+                                <td>English, Hindi</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col s12 center orange-text text-lighten-1" id="interest"
+                        style="background-color: #F9FBF7;">
+                        <div class="row">
+                            <div class="col l3 m3 s3">
+                                <p>
+                                    Football
+                                </p>
+                                <img class="responsive-img" src="./img/fbgif2.gif" alt="">
+                            </div>
+                            <div class="col l6 m6 s6">
+                                <p>
+                                    EDM
+                                </p>
+                                <img class="responsive-img" src="./img/music gif1.gif" alt="">
+                            </div>
+                            <div class="col l3 m3 s3">
+                                <p>
+                                    Gaming
+                                </p>
+                                <img class="responsive-img" src="./img/gamegif1.gif" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills -->
+    <section id="skills" class=" scrollspy section   z-depth-3"
+        style="position: relative; border-radius: 0px 0px 70px 70px;">
+        <div class="parallax-container" style="position: absolute; width: 100%; height: 100%;">
+            <div class="parallax">
+                <img src="./img/stars.jpg" alt="" class="responsive-img">
+            </div>
+        </div>
+        <h2 class=" center grey-text text-lighten-3"
+            style="letter-spacing: 7px; font-size: 70px; font-weight: bold; text-shadow: 5px 1px rgba(229, 115, 115, 1); margin: 60px auto 20px;">
+            Skill<div style="display: inline-block;">s</div>
+        </h2>
+        <div class="container">
+            <div class="row">
+                <style>
+                    #skills .row>.col.outer {
+                        min-height: 500px;
+                        /* position: relative; */
+                    }
+
+                    #circle-container {
+                        min-height: 300px;
+                        border-radius: 10%;
+                    }
+
+                    .outer>.card>.card-image>.slide {
+                        transition-duration: 0.2s;
+                        top: -100%;
+                        /* display: none; */
+                        height: 100%;
+                        position: absolute;
+                        overflow: hidden;
+                        width: 100%;
+                        background-color: white;
+                    }
+
+                    .outer>.card>.card-image>.slide.showAnim {
+                        top: 0%;
+                        transition-duration: 0.5s;
+                        height: 100%;
+                        opacity: 1;
+                        /* display: inherit; */
+                    }
+
+                    .outer>.card {
+                        transition-duration: 1s;
+                        transform: translateY(0px);
+                        box-shadow: none;
+                    }
+
+                    .outer>.card:hover {
+                        transition-duration: 0.5s;
+                        transform: translate(10px, -10px);
+                        box-shadow: 0px 8px 25px goldenrod;
+                        /* display: inherit; */
+                    }
+
+                    .outer>.card>.card-image>.slide.showAnim ::-webkit-scrollbar {
+                        width: 6px;
+                    }
+                </style>
+                <div class="col s12 l4 m6 container outer" style="margin-top:30px;" id="programming">
+                    <div class="card white lighten-5" style="border-radius: 00px 40px 40px 40px; overflow: hidden;">
+                        <div class="card-image waves-effect waves-block waves-light tooltipped"
+                            style="position: relative; overflow: hidden;" data-position="top" data-tooltip="Read More">
+                            <img class="activator" src="./img/prog1.jpg" style="opacity: 0.8; min-height: 180px;">
+                            <div class="slide" style="z-index: 500;">
+                                <div class="bgimg"
+                                    style="margin:0px; background-image: url('./img/bg00.png'); background-size: cover; background-position: center; height: 100%; width: 100%; padding: 20px 20px 10px; opacity: 0.8; overflow-y: scroll;">
+                                    <div>
+                                        <h5 class="topic" style="margin-top: 0px;"></h5>
+                                        <p class="desc"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="activator" id="bubble-section">
+                                <!-- <div class="gap"></div> -->
+                            </div>
+                        </div>
+                        <div class="card-content" style="background-color: rgba (240, 248, 255,0.2); opacity: 0.8;">
+                            <span class="card-title grey-text text-darken-4 center activator" style="font-weight: 700;">
+                                Programming
+                                <!-- <i class="material-icons right">more_vert</i> -->
+                            </span>
+                            <!-- <a class=" btn waves-effect waves-light red">
+                                    data structures
+                                </a> -->
+                            <div class="row center">
+                                <div class="col s12 l12 m12  offset-l" style="margin-top: 3px;">
+                                    <a class=" btn waves-effect waves-light red z-depth-2"
+                                        style="border-radius: 10px; text-transform: none;" id="ds">
+                                        Data Structures
+                                    </a>
+                                </div>
+                                <div class="col s6 l4 m5 offset-l1 offset-m1" style="margin-top: 3px;">
+                                    <a class=" btn waves-effect waves-light red z-depth-2"
+                                        style="border-radius: 10px; text-transform: none;" id="cpp">
+                                        CPP
+                                    </a>
+                                </div>
+                                <div class="col s6 l4 m5 offset-l2" style="margin-top: 3px;">
+                                    <a class=" btn waves-effect waves-light red z-depth-2"
+                                        style="border-radius: 10px; text-transform: none;" id="java">
+                                        Java
+                                    </a>
+                                </div>
+                                <div class="col s12 l12 m12 offset-m" style="margin-top: 3px;">
+                                    <a class=" btn waves-effect waves-light red z-depth-2"
+                                        style="border-radius: 10px; text-transform: none;" id="algo">
+                                        Algorithms
+                                    </a>
+                                </div>
+                                <div class="col s12 l12 m12 offset-l" style="margin-top: 3px;">
+                                    <a class=" btn waves-effect waves-light red z-depth-2"
+                                        style="border-radius: 10px; text-transform: none;" id="oops">
+                                        OOPs
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-reveal white">
+                            <!-- style="background-color: white;opacity: 1; padding: 0px; height: 500px;" -->
+                            <!-- <div style="background-image: url('./img/stars.jpg'); background-size: 700px 700px; opacity: 0.6; margin: 0px;" > -->
+                            <span class="card-title grey-text text-darken-4">Programming
+                                <i class="material-icons right">close</i></span>
+                            <p>Computer programming is a way of giving computers instructions about what they should do
+                                next. These instructions are known as code, and computer programmers write code to solve
+                                problems or perform a task.
+                            </p>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                </div>
+
+
+                <style>
+                    .bgimg::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        left: 0;
+                        bottom: 0;
+                        background: rgba(0, 0, 0, 0.5);
+                    }
+
+                    .desc,
+                    .topic {
+                        color: #fff;
+                        /* color: black; */
+                        position: relative;
+                    }
+                </style>
+                <div class="col s12 l4 m6 container outer offset-m3" style="margin-top:30px;" id="developement">
+                    <div class="card white lighten-5" style="border-radius: 00px 40px 40px 40px; overflow: hidden;">
+                        <div class="card-image waves-effect waves-block waves-light tooltipped"
+                            style="position: relative; overflow: hidden;" data-position="top" data-tooltip="Read More">
+                            <img class="activator" src="./img/dev02.jpg" style="opacity: 0.8;  min-height: 180px;">
+                            <div class="slide" style="z-index: 500;">
+                                <div class="bgimg"
+                                    style="margin:0px; background-image: url('./img/bg00.png'); background-size: cover; background-position: center; height: 100%; width: 100%; padding: 20px 20px 10px; opacity: 0.8; overflow-y: scroll;">
+                                    <div style="">
+                                        <h5 class="topic" style="margin-top: 0px;"></h5>
+                                        <p class="desc"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="activator" id="bubble-section">
+                            </div>
+                        </div>
+                        <div class="card-content" style="background-color: rgba (240, 248, 255,0.2); opacity: 0.8;">
+                            <span class="card-title grey-text text-darken-4 center activator" style="font-weight: 700;">
+                                Developement
+                            </span>
+                            <div class="row center ">
+                                <div class="col s6 l6 m6 offset-m" style="margin-top: 3px;">
+                                    <a class=" btn waves-effect waves-light red z-depth-2"
+                                        style="border-radius: 10px;  text-transform: none;" id="angular">
+                                        AngularJs
+                                    </a>
+                                </div>
+                                <div class="col s6 l6 m6 offset-l" style="margin-top: 3px;">
+                                    <a class=" btn waves-effect waves-light red z-depth-2"
+                                        style="border-radius: 10px;  text-transform: none;" id="react">
+                                        ReactJs
+                                    </a>
+                                </div>
+                                <div class="col s4 l4 m4  offset-l" style="margin-top: 3px;">
+                                    <a class="btn waves-effect waves-light red z-depth-2"
+                                        style="border-radius: 10px;  text-transform: none;" id="html">
+                                        HTML
+                                    </a>
+                                </div>
+                                <div class="col s4 l4 m4 offset-l offset-m" style="margin-top: 3px;">
+                                    <a class=" btn waves-effect waves-light red z-depth-2"
+                                        style="border-radius: 10px;  text-transform: none;" id="css">
+                                        CSS
+                                    </a>
+                                </div>
+                                <div class="col s4 l4 m4 offset-m" style="margin-top: 3px;">
+                                    <a class=" btn waves-effect waves-light red z-depth-2"
+                                        style="border-radius: 10px;  text-transform: none;" id="api">
+                                        API
+                                    </a>
+                                </div>
+                                <div class="col s6 l6 m6 offset-l offset-m" style="margin-top: 3px;">
+                                    <a class=" btn waves-effect waves-light red z-depth-2"
+                                        style="border-radius: 10px;  text-transform: none;" id="mongo">
+                                        MongoDB
+                                    </a>
+                                </div>
+                                <div class="col s6 l6 m6 offset-l" style="margin-top: 3px;">
+                                    <a class=" btn waves-effect waves-light red z-depth-2"
+                                        style="border-radius: 10px;  text-transform: none;" id="jquery">
+                                        JQuery
+                                    </a>
+                                </div>
+                                <div class="col s6 l6 m6 offset-l" style="margin-top: 3px;">
+                                    <a class=" btn waves-effect waves-light red z-depth-2"
+                                        style="border-radius: 10px;  text-transform: none;" id="node">
+                                        NodeJs
+                                    </a>
+                                </div>
+                                <div class="col s6 l6 m6 offset-l" style="margin-top: 3px;">
+                                    <a class=" btn waves-effect waves-light red z-depth-2"
+                                        style="border-radius: 10px; text-transform: none;" id="js">
+                                        JavaScript
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-reveal white">
+                            <span class="card-title grey-text text-darken-4">Developement
+                                <i class="material-icons right">close</i></span>
+                            <p>Software development is a process by which standalone or individual software is created
+                                using a specific programming language. It involves writing a series of interrelated
+                                programming code, which provides the functionality of the developed software.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 l4 m6 container outer offset-m6" style="margin-top:30px;" id="others">
+                    <div class="card white lighten-5" style="border-radius: 00px 40px 40px 40px; overflow: hidden;">
+                        <div class="card-image waves-effect waves-block waves-light tooltipped"
+                            style="position: relative; overflow: hidden;" data-position="top" data-tooltip="Read More">
+                            <img class="activator" src="./img/others1.jpg" style="opacity: 0.8; min-height: 180px;">
+                            <div class="slide" style="z-index: 500;">
+                                <div class="bgimg"
+                                    style="margin:0px; background-image: url('./img/bg00.png'); background-size: cover; background-position: center; height: 100%; width: 100%; padding: 20px 20px 10px; opacity: 0.8; overflow-y: scroll;">
+                                    <div>
+                                        <h5 class="topic" style="margin-top: 0px;"></h5>
+                                        <p class="desc"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="activator" id="bubble-section">
+                            </div>
+                        </div>
+                        <div class="card-content" style="background-color: rgba (240, 248, 255,0.2); opacity: 0.8;">
+                            <span class="card-title grey-text text-darken-4 center activator" style="font-weight: 700;">
+                                Others
+                            </span>
+                            <div class="row center">
+                                <div class="col s12 l12 m12  offset-l" style="margin-top: 3px;">
+                                    <a class=" btn waves-effect waves-light red z-depth-2"
+                                        style="border-radius: 10px; text-transform: none;" id="ml">
+                                        Machine Learning
+                                    </a>
+                                </div>
+                                <div class="col s6 l4 m5 offset-l1 offset-m1" style="margin-top: 3px;">
+                                    <a class=" btn waves-effect waves-light red z-depth-2"
+                                        style="border-radius: 10px; text-transform: none;" id="sql">
+                                        SQL
+                                    </a>
+                                </div>
+                                <div class="col s6 l4 m5 offset-l2" style="margin-top: 3px;">
+                                    <a class=" btn waves-effect waves-light red z-depth-2"
+                                        style="border-radius: 10px; text-transform: none;" id="flask">
+                                        Flask
+                                    </a>
+                                </div>
+                                <div class="col s12 l12 m12 offset-m" style="margin-top: 3px;">
+                                    <a class=" btn waves-effect waves-light red z-depth-2"
+                                        style="border-radius: 10px; text-transform: none;" id="puppeteer">
+                                        Puppeteer
+                                    </a>
+                                </div>
+                                <div class="col s12 l12 m12 offset-l" style="margin-top: 3px;">
+                                    <a class=" btn waves-effect waves-light red z-depth-2"
+                                        style="border-radius: 10px; text-transform: none;" id="selenium">
+                                        Selenium
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-reveal white">
+                            <span class="card-title grey-text text-darken-4">Others
+                                <i class="material-icons right">close</i></span>
+                            <p>
+                                This section includes various other skills that I learned alongside projects. Most of
+                                them were based on needs.
+                                I also went through a Machine Learning Course in the process and integrated it using
+                                Flask in some of my Developement Projects.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- trainings -->
+    <section id="trainings" class="z-depth-5 section scrollspy"
+        style="padding-top: 40px; position: relative; z-index: 6; overflow-x: hidden;">
+        <style>
+            #trainings .container {
+                padding-bottom: 30px;
+                padding-top: 30px;
+                min-height: 500px;
+            }
+
+            #trainings .col.list {
+                font-size: 20px;
+                line-height: 30px;
+                margin-top: 20px;
+                border-radius: 20px;
+                transition-duration: 0.5s;
+                color: #ff5722;
+                font-weight: 600;
+                background-color: #cfd8dc;
+                min-height: 40px;
+                cursor: pointer;
+                border-top: 2px solid gold;
+                box-shadow: 2px 2px 10px black;
+            }
+
+            #trainings .col.list:hover {
+                background-color: #5c6bc0;
+                font-weight: 700;
+                color: #ffab00;
+                border: none;
+                /* #ff3d00 */
+                box-shadow: 2px 2px 15px #ef6c00;
+            }
+
+            #trainings #target .img-cont {
+                padding-top: 22%
+            }
+
+            #trainings #target {
+                margin-top: 50px;
+                padding-bottom: 10px;
+                background-color: rgba(194, 190, 190, 0.192);
+                transition-duration: 0.2s;
+            }
+
+            #trainings #target:hover {
+                transform: scale(1.1);
+                transition-duration: 0.5s;
+            }
+
+            #trainings .col.list:focus {
+                background-color: #e57373;
+                transform: translateY(-5px);
+            }
+        </style>
+        <h2 class="center">
+            Trainings <div style="display: inline-block; min-width: 60px;">&amp;</div> Certificates </h2>
+        <div style="position: relative;">
+            <div class="container center">
+                <div class="row" style="margin-bottom: 20px;">
+                    <div class="col list s12 m4 offset-m1 l4 offset-l1" id="inception">
+                        C++ Inception
+                    </div>
+                    <div class="col list s12 m4 offset-m2 l4 offset-l2" id="ui">
+                        UI Developement
+                    </div>
+                    <div class="col list s12 m4 offset-m1 l4 offset-l1" id="mean">
+                        MEAN Stack
+                    </div>
+                    <div class="col list s12 m4 offset-m2 l4 offset-l2" id="levelup">
+                        Younified Level Up
+                    </div>
+                </div>
+                <div id="target" class="hide" style="">
+                    <div class="row" style="vertical-align: middle;">
+
+                        <div class="col l4 img-div">
+                            <div class="img-cont hide-on-med-and-down">
+                            </div>
+                            <img class="responsive-img materialboxed" src="" alt="">
+                        </div>
+                        <div class="col l6 offset-l1 text-div">
+                            <h4>What I Learnt...?</h4>
+                            <h5></h5>
+                            <p class="date amber-text text-darken-3" data-tooltip="Course Duration"
+                                style="margin-bottom: 0px; margin-top: 5px"></p>
+                            <p class="" style="margin-bottom: 0px; margin-top: 5px"><span
+                                    class="teal-text text-lighten-1"><b>Instructor:</b></span> <span
+                                    class="inst"></span></p>
+                            <p class="desc indigo-text text-darken-4"></p>
+                            <p class="byline black-text right">- By <span class="red-text text-lighten-2"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="demo" class="polygonizr"
+                style="position: absolute;height: 100%;width: 100%;top: 0%;z-index: -1;overflow: hidden;">
+            </div>
+            <br>
+        </div>
+    </section>
+
+    <!-- projects -->
+    <section id="projects" class=" section scrollspy"
+        style="position: relative; min-height: 400px; padding-top: 40px; background: unset; background-size: cover; background-position: center; z-index: 5; padding-bottom: 0px;">
+        <style>
+            #projects .carousel-item {
+                min-height: 100%;
+                height: max-content;
+                min-width: 300px;
+            }
+
+            #projects ul.indicators {
+                bottom: 0px;
+            }
+
+            #projects ul.indicators>li {
+                background-color: #ce93d8;
+            }
+
+            #projects ul.indicators>li.active {
+                background-color: #303f9f;
+            }
+
+            #projects .card>.card-content {
+                max-height: 200px;
+                overflow-y: scroll;
+            }
+
+            #projects ::-webkit-scrollbar {
+                width: 8px;
+            }
+            #projects .card{
+                border-radius: 60px 2px 60px 2px;
+                overflow: hidden;
+            }
+        </style>
+        <h2 class="center" style="padding-bottom: 15px;">
+            Pro<div style="display: inline-block;">j</div>ects </h2>
+        <h2 class="center hide" style="padding-bottom: 15px;">Projects</h2>
+        <div class="carousel" style="background-color: unset;min-height: 475px; height: unset;">
+            <div class="col s12 m6 l8 carousel-item">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./img/wp01.jpg">
+                        <span class="card-title">Shop384 - E_Commerce App</span>
+                        <a href="https://github.com/Arpan384/Shop384_e-commerceApp_MEAN" target="_blank" class="btn-floating halfway-fab waves-effect waves-light red tooltipped" data-tooltip="View on GitHub"><i
+                                class="material-icons">double_arrow</i></a>
+                    </div>
+                    <div class="card-content">
+                        <p>
+                            Shopping online is now a huge trend and makes life easier. Shop384 is one such application
+                            built using MEAN and has all the features like adding products or buying them. It is just an attempt to understand and convert a bussiness to a working
+                            application. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l8 carousel-item">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./img/wp01.jpg">
+                        <span class="card-title">NextFlix Movie Recommender</span>
+                        <a href="https://github.com/Arpan384/NextFlix-Movie-Recommender" target="_blank" class="btn-floating halfway-fab waves-effect waves-light red tooltipped" data-tooltip="View on GitHub"><i
+                                class="material-icons">double_arrow</i></a>
+                    </div>
+                    <div class="card-content">
+                        <p>
+                            This is a purely ML and UI based application which predicts the similar movies based on a
+                            provided movie name. The dataset is taken from kaggle and the applied alogorithm uses cosine
+                            similarity.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l8 carousel-item">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./img/wp01.jpg">
+                        <span class="card-title">Pareeksha - Online Test App</span>
+                        <a href="https://github.com/Arpan384/ML_MEAN-Pareeksha-online-test-platform" target="_blank" class="btn-floating halfway-fab waves-effect waves-light red tooltipped" data-tooltip="View on GitHub"><i
+                                class="material-icons">double_arrow</i></a>
+                    </div>
+                    <div class="card-content">
+                        <p>
+                            Pareeksha is a MEAN & ML based Online Test Application which allows teachers to upload
+                            tests. Students
+                            can attempt these tests and analyse their performance.
+                            The results of the student are generated immediately and sent to them via email after
+                            subitting the test.
+                            The main objective is to transform Offline System into Online and to make a step towards
+                            Digital Education.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l8 carousel-item">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./img/wp01.jpg">
+                        <span class="card-title">What's the weather? CLI App</span>
+                        <a href="https://github.com/Arpan384/weatherCLIapp" target="_blank" class="btn-floating halfway-fab waves-effect waves-light red tooltipped" data-tooltip="View on GitHub"><i
+                                class="material-icons">double_arrow</i></a>
+                    </div>
+                    <div class="card-content">
+                        <p>
+                            Weather App is a command line weather predictor application which gets the weather
+                            forecast of any city in the world. It can provide weather predictionsfor upto 7 days.
+                            The application is based on the usage of third party APIs using JavaScript.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l8 carousel-item">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./img/wp01.jpg">
+                        <span class="card-title">Excel Clone</span>
+                        <a class="btn-floating halfway-fab waves-effect waves-light red tooltipped" data-tooltip="View on GitHub"><i
+                                class="material-icons">double_arrow</i></a>
+                    </div>
+                    <div class="card-content">
+                        <p>
+                            We all have worked with excel some time due to its vast features and data handling ability.
+                            What i have created is a partial clone of it which enable user to save/load files along with
+                            the ability to auto-calculate cell values using the formulas provided.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l8 carousel-item">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./img/wp01.jpg">
+                        <span class="card-title">CNBC Clone</span>
+                        <a href="https://github.com/Arpan384/CNBC_clone_UI" target="_blank" class="btn-floating halfway-fab waves-effect waves-light red tooltipped" data-tooltip="View on GitHub"><i
+                                class="material-icons">double_arrow</i></a>
+                    </div>
+                    <div class="card-content">
+                        <p>
+                            This Page is a clone of CNBC news webpage and is created solely for learning and skill
+                            enhancing purpose.
+                            It is a static website which is made with the help of HTML4 and CSS2.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l8 carousel-item">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./img/wp01.jpg">
+                        <span class="card-title">Chat App</span>
+                        <a href="https://github.com/Arpan384/ChatApp_webSockets" target="_blank" class="btn-floating halfway-fab waves-effect waves-light red tooltipped" data-tooltip="View on GitHub"><i
+                                class="material-icons">double_arrow</i></a>
+                    </div>
+                    <div class="card-content">
+                        <p>
+                            Wanna have a group chat with a large number of people, or reunite with old friends?
+                            This chat app makes use of Web Sockets to enable real-time chatting with any number of
+                            people who join the room.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l8 carousel-item">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./img/wp01.jpg">
+                        <span class="card-title">Music App</span>
+                        <a href="https://github.com/Arpan384/Symphony_MusicApp" target="_blank" class="btn-floating halfway-fab waves-effect waves-light red tooltipped" data-tooltip="View on GitHub"><i
+                                class="material-icons">double_arrow</i></a>
+                    </div>
+                    <div class="card-content">
+                        <p>
+                            Listening to your favourite music becomes even better when it is on your very own app.
+                            This Music App is made using HTML5, CSS3 and JavaScript and enables the user to stream
+                            saved songs and create a playlist of their favourite ones.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l8 carousel-item">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./img/wp01.jpg">
+                        <span class="card-title">Fun with File System</span>
+                        <a href="https://github.com/Arpan384/Treefy_UnTreefy__FS" target="_blank" class="btn-floating halfway-fab waves-effect waves-light red tooltipped" data-tooltip="View on GitHub"><i
+                                class="material-icons">double_arrow</i></a>
+                    </div>
+                    <div class="card-content">
+                        <p>
+                            This project demonstrates a balanced combination of Data Structures and JavaScript.
+                            It has the ability to flatten the files and folders and can re-construct the original tree
+                            structure using a metadata file created while flattening.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l8 carousel-item">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./img/wp01.jpg">
+                        <span class="card-title">YouTube Automation</span>
+                        <a href="https://github.com/Arpan384/YouTube_Automation-puppeteer" target="_blank" class="btn-floating halfway-fab waves-effect waves-light red tooltipped" data-tooltip="View on GitHub"><i
+                                class="material-icons">double_arrow</i></a>
+                    </div>
+                    <div class="card-content">
+                        <p>
+                            YouTube Automation is a one click application which is made using puppeteer. The tasks it
+                            can perform includes uploading multiple videos with provided options and get the link
+                            generated, also it enables the user the scrape comments for a video and generate an
+                            organized pdf file.
+                            Furthermore, it can also download the specified video with the help of a 3rd party website.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="parallax-container" style="position: absolute; top: 0px; height: 100%; width: 100%; z-index: -100;">
+            <div class="parallax">
+                <img src="./img/wp02.jpg" alt="" class="responsive-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- more -->
+    <section id="more" class="section scrollspy">
+        <div class="container">
+            <h2 class="indigo-text text-darken-4 center" style="padding-bottom: 20px;">
+                <div style="display: inline-block;">M<div class="animated" style="display: inline-block;">o</div>re
+                </div>
+                <div style="display: inline-block;">Ab<div class="animated" style="display: inline-block;">o</div>ut
+                </div> Me
+            </h2>.
+            <div class="row">
+                <div class="col l6 m6 s12">
+                    <h4 class="center indigo-text">Education</h4>
+                    <ul class="collapsible popout">
+                        <li class="active">
+                            <div class="collapsible-header  orange-text text-lighten-1"><i
+                                    class="material-icons">local_library</i>Bachelor of Technology</div>
+                            <div class="collapsible-body center">
+                                <p><span class="teal-text text-lighten-2"><b>University :</b></span> Guru Gobind Singh
+                                    Indraprastha University </p>
+                                <p><span class="teal-text text-lighten-2"><b>Institution Name :</b></span> Bhagwan
+                                    Parshuram Institute of Technology </p>
+                                <p><span class="teal-text text-lighten-2"><b>Specialization :</b></span> Information
+                                    Technology </p>
+                                <p><span class="deep-orange-text text-lighten-1"><b>Percentage :</b></span> 85.4% </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header green-text text-lighten-2"><i
+                                    class="material-icons">school</i><span>12<sup>th</sup></span></div>
+                            <div class="collapsible-body center">
+                                <p><span class="teal-text text-lighten-2"><b>Institution Name :</b></span> N. K.
+                                    Bagrodia Public School </p>
+                                <p><span class="teal-text text-lighten-2" style="letter-spacing: 2px;"><b>Board
+                                            :</b></span> CBSE </p>
+                                <p><span class="teal-text text-lighten-2"><b>Specialization :</b></span> Science </p>
+                                <p><span class="deep-orange-text text-lighten-1"><b>Percentage :</b></span> 87.2% </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header green-text text-lighten-2"><i
+                                    class="material-icons">school</i><span>10<sup>th</sup></span></div>
+                            <div class="collapsible-body center">
+                                <p><span class="teal-text text-lighten-2"><b>Institution Name :</b></span> N. K.
+                                    Bagrodia Public School </p>
+                                <p><span class="teal-text text-lighten-2" style="letter-spacing: 2px;"><b>Board
+                                            :</b></span> CBSE </p>
+                                <p><span class="deep-orange-text text-lighten-1"><b>Percentage :</b></span> 81.7% </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col l6 m6 s12">
+                    <h4 class="center indigo-text">Achievements</h4>
+                    <ul class="collapsible popout">
+                        <li>
+                            <div class="collapsible-header  green-text text-lighten-2"><i
+                                    class="material-icons">beenhere</i>Hackerrank</div>
+                            <div class="collapsible-body">
+                                <img src="./certificates/hackerrank.JPG" alt="" class="responsive-img materialboxed">
+                                <p>
+                                    Hackerrank recently started providing certifications based on the performance in
+                                    their test. <br>
+                                    I earned the certifications for Problem Solving - Basic, Problem Solving -
+                                    Intermediate and Java.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header green-text text-lighten-2"><i
+                                    class="material-icons">whatshot</i>Eloquence'19</div>
+                            <div class="collapsible-body">
+                                <img src="./certificates/eloquence.jpg" alt="" class="responsive-img materialboxed">
+                                <p>
+                                    Eloquence'19 is the annual literary fest of Bhagwan Parshuram Institute of
+                                    Technology. <br>
+                                    I worked as a member of the technical team with the primary role of designing the
+                                    website to extend our reach. It was a good experience :)
+                                </p>
+                            </div>
+                        </li>
+                        <li class="active">
+                            <div class="collapsible-header green-text text-lighten-2"><i
+                                    class="material-icons">card_membership</i>Coding Ninjas</div>
+                            <div class="collapsible-body">
+                                <img src="./certificates/ninjas_excellence.JPG" alt=""
+                                    class="responsive-img materialboxed">
+                                <p>
+                                    Coding Ninjas now provides 'Certificate of Excellence' to the top performers of
+                                    their courses as a token of appreciation. <br>
+                                    I was fortunate enough to earn one when i was enrolled in their Inception'17 Course
+                                    for C++ with DS and Algo.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="page-footer grey darken-3">
+        <div class="container">
+            <div class="row" style="vertical-align: middle;">
+                <div class="col s11 m4 offset-m offset-s1 l4 center">
+                    <h4 class="center">
+                        Keep Learning,
+                        <br>
+                        <span class="hide-sm">&emsp;<span class="hide-on-med-and-down">&emsp;</span></span>Keep Creating!
+                    </h4>
+                </div>
+                <div class="col s12 m6 offset-m2 l6 offset-l2 center">
+                    <h5>Find me on. . .</h5>
+                    <ul>
+                        <li>
+                            <a href="https://github.com/Arpan384" target="_blank" class="grey-text text-lighten-3">
+                                <i class="fab fa-github" style="font-size: 20px;"></i> &emsp; GitHub
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/arpan-saini-35b6b0194/" target="_blank"
+                                class="grey-text text-lighten-3">
+                                <i class="fab fa-linkedin-in" style="font-size: 20px;"></i> &emsp; LinkedIn
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/saini2.arpan/" target="_blank"
+                                class="grey-text text-lighten-3">
+                                <i class="fab fa-facebook-f" style="font-size: 20px;"></i> &emsp; Facebook
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/saini2arpan" target="_blank" class="grey-text text-lighten-3">
+                                <i class="fab fa-twitter" style="font-size: 20px;"></i> &emsp; Twitter
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/saini2.arpan/" target="_blank"
+                                class="grey-text text-lighten-3">
+                                <i class="fab fa-instagram" style="font-size: 20px;"></i> &emsp; Instagram
+                            </a>
+                        </li>
+                        <li>
+                            <span class="grey-text text-lighten-3">
+                                Email : saini2.arpan@gmail.com
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright grey darken-4">
+            <div class="container center-align">
+                &copy; 2020 Arpan Saini
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+    <script src="./plugins/polygonizr.min.js"></script>
+    <script src="./index.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".sidenav").sidenav();
+            $(".materialboxed").materialbox();
+            $(".parallax").parallax();
+            $(".tabs").tabs();
+            $(".tooltipped").tooltip();
+            $(".scrollspy").scrollSpy();
+
+            $(".carousel").carousel({
+                indicators: true
+            })
+
+            $('.collapsible').collapsible();
+
+            $('.polygonizr').polygonizr({
+
+
+                // Indicates the time (in seconds) to pause after a node has reached its destination. 
+                restNodeMovements: 1,
+
+                // Indicates how long (in seconds) it will take for a node to move from start to finish. 
+                duration: 3,
+
+                // Indicates the maximum (will be randomized) distance a node can move (in pixles) from its starting position. 
+                nodeMovementDistance: 100,
+
+                // Indicates how many nodes to paint which relation can be filled (note: nodeFillSapce must be set to true). 
+                numberOfNodes: 50,
+
+                // Indicates how many nodes to paint that does not create relations that can be filled. 
+                numberOfUnconnectedNode: 25,
+
+                // Indicates if a line should be drawn between the drawn between unconnected nodes. 
+                ConnectUnconnectedNodes: true,
+
+                // Indicates the maximum distance between unconnected nodes to draw the line.
+                ConnectUnconnectedNodesDistance: 250,
+
+                // Indicates the maximum painted size of each node's "dot".
+                nodeDotSize: 2.5,
+
+                // Indicates the ease mode of each node movement (linear, easeIn, easeOut, easeInOut, accelerateDecelerate). 
+                nodeEase: "easeOut",
+
+                // If true, the nodes starting position will descend into place on load. 
+                nodeFancyEntrance: false,
+
+                // If true, each nodes starting position will be randomized within the canvas size. If false, each nodes position must be specified manually. 
+                randomizePolygonMeshNetworkFormation: true,
+
+                // Indicates the positioning of each nodes starting position (note: randomizePolygonMeshNetworkFormation must be set to false).
+                specifyPolygonMeshNetworkFormation: null,
+
+                // Indicates how many nodes of the "numberOfNodes" that will be connected.
+                nodeRelations: 3,
+
+                // Indicates the frame rate at which to up<a href="https://www.jqueryscript.net/time-clock/">date</a> each node movement.
+                animationFps: 30,
+
+                // Indicates the color (RGB) of each node's "dot". 
+                nodeDotColor: "15, 126, 236",
+
+                // Indicates the color (RGB) of the line drawn between connected nodes.
+                nodeLineColor: "103, 173, 243",
+
+                // Indicates the fill color (RGB) between each connected node. 
+                nodeFillColor: "183, 212, 241",
+
+                // Indicates the linear gradient to the fill color (RGB) between each connected node. 
+                nodeFillGradientColor: null,
+
+                // Indicates the fill color's alpha level (1-0).
+                nodeFillAlpha: 0.5,
+
+                // Indicates the alpha level (1-0) of the line drawn between connected nodes. 
+                nodeLineAlpha: 0.5,
+
+                // Indicates the alpha level (1-0) of each node's "dot". 
+                nodeDotAlpha: 1.0,
+
+                // Indicates the probability (1-0) of showing the coordinates for each nodes final position.
+                nodeDotPrediction: 0,
+
+                // If true, the relation between connected nodes will be filled. 
+                nodeFillSapce: true,
+
+                // If true, each node's final position can be outside the canvas boundary. 
+                nodeOverflow: true,
+
+                // If true, a glowing effect is added to each node, its relations and fill respectively.
+                nodeGlowing: false,
+
+                // Indicates the width of the canvas on which to paint each node. 
+                canvasWidth: $(this).width(),
+
+                // Indicates the height of the canvas on which to paint each node.
+                canvasHeight: $(this).height(),
+
+                // Indicate the CSS position property by which to position the canvas.
+                canvasPosition: "absolute",
+
+                // Indicate the CSS top property by which to vertically position the canvas.
+                canvasTop: "auto",
+
+                // Indicate the CSS bottom property by which to vertically position the canvas.
+                canvasBottom: "auto",
+
+                // Indicate the CSS right property by which to horizontally position the canvas.
+                canvasRight: "auto",
+
+                // Indicate the CSS left property by which to horizontally position the canvas.
+                canvasLeft: "auto",
+
+                // Indicate the CSS z-index property by which to specify the stack order of the canvas.
+                canvasZ: "auto"
+
+            });
+        });
+    </script>
+</body>
+
+</html>

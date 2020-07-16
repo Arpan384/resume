@@ -7,7 +7,7 @@ window.addEventListener("load", () => {
     trainBtns.forEach((b)=>{
         b.addEventListener("click", trainingHandler)
     })
-    trainBtns[0].click()
+    trainBtns[1].click()
 
     let clientWidth = document.querySelector("header").clientWidth
     let cardWidth = document.querySelector(".bgimg").clientWidth

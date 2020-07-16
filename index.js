@@ -17,7 +17,7 @@ window.addEventListener("load", () => {
         cubeGen(clientWidth)
     }, 400, cubeGen, clientWidth);
     
-    trainBtns[0].click();
+//     trainBtns[0].click();
 })
 
 let skill_details= {

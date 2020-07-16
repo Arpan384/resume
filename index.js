@@ -6,8 +6,7 @@ window.addEventListener("load", () => {
     let trainBtns = document.querySelectorAll("#trainings .list");
     trainBtns.forEach((b)=>{
         b.addEventListener("click", trainingHandler)
-    })
-    trainBtns[1].click()
+    });
 
     let clientWidth = document.querySelector("header").clientWidth
     let cardWidth = document.querySelector(".bgimg").clientWidth
@@ -17,6 +16,8 @@ window.addEventListener("load", () => {
     setInterval((cubeGen, clientWidth) => {
         cubeGen(clientWidth)
     }, 400, cubeGen, clientWidth);
+    
+    trainBtns[0].click();
 })
 
 let skill_details= {

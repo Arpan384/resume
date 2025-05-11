@@ -1,0 +1,25 @@
+# Workflow to build static content on push
+name: Build Static Content
+
+on:
+  push:
+    branches: ["master"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      upload_path: ${{ steps.upload.outputs.artifact_path }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Build your static site
+        # Add your build commands here
+        run: echo "No build steps defined. Ensure your static content is in the repository root or adjust the upload path."
+      - name: Upload artifact
+        id: upload
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "." # Adjust this path to your build output directory if needed

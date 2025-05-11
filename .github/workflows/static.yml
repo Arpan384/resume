@@ -1,12 +1,12 @@
 # Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+name: Build and Prepare Static Content
 
 on:
-  # Runs on pushes targeting the default branch
+  # Runs on pushes targeting the default branch, creating the build artifact
   push:
     branches: ["master"]
 
-  # Allows you to run this workflow manually from the Actions tab
+  # Allows you to run the deployment workflow manually from the Actions tab
   workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
@@ -15,29 +15,46 @@ permissions:
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+# Allow only one concurrent build, skipping runs queued between the run in-progress and latest queued.
 concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  group: "pages-build"
+  cancel-in-progress: true
 
 jobs:
-  # Single deploy job since we're just deploying
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  # Job to build and prepare the static content
+  build:
     runs-on: ubuntu-latest
+    outputs:
+      upload_path: ${{ steps.upload.outputs.artifact_path }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      - name: Build your static site
+        # Add your build commands here
+        # For example:
+        # run: |
+        #   npm install
+        #   npm run build
+        run: echo "No build steps defined. Ensure your static content is in the repository root or adjust the upload path."
       - name: Upload artifact
+        id: upload
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
-          path: '.'
+          # Upload the output of your build process
+          path: "." # Adjust this path to your build output directory if needed
+
+  # Deployment job, will only run manually
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    # Only trigger this job manually
+    if: github.event_name == 'workflow_dispatch'
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

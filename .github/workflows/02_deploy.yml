@@ -12,16 +12,15 @@ permissions:
 
 jobs:
   deploy:
-    # needs: [ ] # No explicit dependency on the 'build' job in a different workflow
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4 # You might need this if you perform operations on the repo in this workflow
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
-          path: "." # Download the artifact to the current directory
+          name: artifact # Ensure this matches the name (or default name) from build.yml
+          path: "downloaded_artifact" # Download the artifact to a specific directory
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -29,3 +28,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          artifact_path: downloaded_artifact # Point to the downloaded artifact directory

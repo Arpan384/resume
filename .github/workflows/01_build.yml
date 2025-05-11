@@ -22,4 +22,5 @@ jobs:
         id: upload
         uses: actions/upload-pages-artifact@v3
         with:
+          name: artifact # Explicitly name your artifact (or use the default)
           path: "." # Adjust this path to your build output directory if needed

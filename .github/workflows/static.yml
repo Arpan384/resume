@@ -53,7 +53,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     # Only trigger this job manually
-    if: github.event_name == 'workflow_dispatch'
+    if: ${{ github.event_name == 'workflow_dispatch' }}
     steps:
       - name: Deploy to GitHub Pages
         id: deployment

@@ -1,5 +1,5 @@
 window.addEventListener("load", () => {
-
+    injectCurrentYear();
     let skillBtns = document.querySelectorAll("#skills .outer .card-content .row .col>a");
     skillBtns.forEach((b)=>b.addEventListener("click", skillFocus))
 
@@ -242,4 +242,10 @@ function trainingHandler() {
     p4.innerText = training_details[this.id]["by"]
     img.src = training_details[this.id]["img"]
 
+}
+
+function injectCurrentYear() {
+    let elements = document.querySelectorAll("#current-year");
+    let currentYear = (new Date()).getFullYear();
+    for(ele of elements) ele.innerText = currentYear;
 }
